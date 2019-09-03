@@ -1,7 +1,7 @@
 # Advance CSS and SASS
 
 Created: Aug 27, 2019 11:18 AM
-Updated: Sep 02, 2019 11:34 AM
+Updated: Sep 02, 2019 7:14 PM
 
 # Three Pillars of Writing Good HTML and CSS
 
@@ -102,20 +102,37 @@ For easy way to change measurement on page with one simple setting. For example 
 
 Instead of writing hundred of lines of code by using media queries, we can use only one global setting, that is global `font-size`.
 
-今まで、このことを気づきました。コードの目的は自分がどれほど賢いかを見せびらかすことではありません。コードは難しいほど、読むにくいほど、頭がいいらしいではない。
+# Visual formatting model
 
-コードは簡単、短い、読みやすいなら、メーンテーンは速いし、楽です。
+![](Untitled-3aaf3f2c-c335-4afb-a80c-1392ceeec4aa.png)
 
-Metaprogrammingも同じ、本当に難しい技術です。賢いそうだけど、いつも利用するではなくて、なくてもいいです。まず簡単方法探しましょう。
+## Box model
 
-注力ポイント
+![](Untitled-88e0aa78-221c-4476-9837-b1ce6e6ce05d.png)
 
-結果・成果・振り返り(良かった点/課題点)
+- **total width** = right border + right padding + specified width + left padding + left border
+- **total height** = top border + top padding + specified height + bottom padding + bottom border
 
-ログイン履歴（レビュー中）
+→ When we specify the height of div, that height is content + padding
 
-バッグ修正（レビュー中）
+→ using `border-box`:
 
-deviseゲムとwardenについて勉強になりました。
+![](Untitled-75c99708-7681-4f68-b331-95f7116c3133.png)
 
-doorkeeper-openid-connectこのゲムはバッグがあるかもしれません。
+## Box types: inline, block-level, inline-block
+
+![](Untitled-64a37c3f-f013-4aae-ac0b-f0112bf25021.png)
+
+## Positioning schemes: normal, float, absolute
+
+![](Untitled-98e424c3-1ad4-4540-9128-5447662880ce.png)
+
+# CSS Architecture, components and BEM
+
+### Think
+
+![](Untitled-bd6c283d-cc05-42ba-855d-1c4901c8eed7.png)
+
+### Build
+
+BEM
